@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ExpenseTracker.Models
 {
@@ -11,6 +12,7 @@ namespace ExpenseTracker.Models
         [DataType(DataType.Date)]
         public DateTime TransDate  { get; set; }
         public string? Category { get; set; }
+        [Column(TypeName ="decimal  (18, 2)")]
         [DataType(DataType.Currency)]
         public decimal Value { get; set; }
     }
