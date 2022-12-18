@@ -24,7 +24,7 @@ public static class SeedData
             context.Transaction.AddRange(
                 new Transaction
                 {
-                    Type = "Expense",
+                    TypeId = 0,
                     Description = null,
                     TransDate = DateTime.Parse("2022-12-12"),
                     Category = "House",
@@ -32,7 +32,7 @@ public static class SeedData
                 },
                 new Transaction
                 {
-                    Type = "Expense",
+                    TypeId = 0,
                     Description = "Test description",
                     TransDate = DateTime.Parse("2022-12-11"),
                     Category = "Supermarket",
@@ -40,15 +40,15 @@ public static class SeedData
                 },
                 new Transaction
                 {
-                    Type = "Revenue",
+                    TypeId = 1,
                     Description = "Payday",
                     TransDate = DateTime.Parse("2023-01-10"),
                     Category = "Work",
                     Value = 2000M
                 },
                 new Transaction
-                {
-                    Type = "Expense",
+                {   
+                    TypeId = 0,
                     Description = null,
                     TransDate = DateTime.Parse("2023-01-10"),
                     Category = "Moving",

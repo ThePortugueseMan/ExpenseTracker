@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int}"
 @model ExpenseTracker.Pages.Transactions.EditModel
 
 @{
@@ -15,9 +15,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Transaction.Id" />
             <div class="form-group">
-                <label asp-for="Transaction.Type" class="control-label"></label>
-                <input asp-for="Transaction.Type" class="form-control" />
-                <span asp-validation-for="Transaction.Type" class="text-danger"></span>
+                <label asp-for="Transaction.TypeId" class="control-label"></label>
+                <input asp-for="Transaction.TypeId" class="form-control" />
+                <span asp-validation-for="Transaction.TypeId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Transaction.Description" class="control-label"></label>
